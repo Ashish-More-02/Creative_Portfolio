@@ -1,8 +1,13 @@
-# React + Vite
+# Creative Portfolio 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Pixelbloom
+A portfolio website for photoediting , video editing etc 
 
-Currently, two official plugins are available:
+build using Vite , React , Tailwind css ,framer-motion , Animate on Scroll  (AOS), Nodejs .
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<video src="../creative_portfolio//src/assets/videos/SR-1.mov"></video>
+
+
+## copyright 
+
+@ 2024 all rights reserved pixelbloom
