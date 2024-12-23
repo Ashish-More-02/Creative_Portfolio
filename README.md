@@ -1,13 +1,31 @@
 # Creative Portfolio 
 
-## Pixelbloom
-A portfolio website for photoediting , video editing etc 
+## PixelBloom
+A portfolio website for photo editing, video editing, and more.
 
-build using Vite , React , Tailwind css ,framer-motion , Animate on Scroll  (AOS), Nodejs .
+**Built with**:
+- [Vite](https://vitejs.dev/)
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [Animate on Scroll (AOS)](https://michalsnik.github.io/aos/)
+- [Node.js](https://nodejs.org/)
 
-<video src="../creative_portfolio//src/assets/videos/SR-1.mov"></video>
+## Screenshots
+Here are some previews of the website:
 
+![Screenshot 1](./src/assets/screenShots/s1.png)
+![Screenshot 2](./src/assets/screenShots/s2.png)
+![Screenshot 3](./src/assets/screenShots/s3.png)
+![Screenshot 4](./src/assets/screenShots/s4.png)
+![Screenshot 5](./src/assets/screenShots/s5.png)
 
-## copyright 
+## Features
+- Intuitive interface for photo and video editing.
+- Smooth animations and transitions powered by Framer Motion and AOS.
+- Fully responsive design built with Tailwind CSS.
 
-@ 2024 all rights reserved pixelbloom
+## Getting Started
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Ashish-More-02/Creative_Portfolio.git
