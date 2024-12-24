@@ -7,19 +7,19 @@ import MoreSection from "./MoreSection";
 import QnA from "./QnA";
 import Reviews from "./Reviews";
 
-const Body = () => {
+const Body = ({ photosRef, reviewsRef, qnaRef }) => {
   useEffect(() => {
     AOS.init();
   }, []);
 
   return (
     <div className="my-20">
-      <h1 className="text-white text-5xl m-4 text-center">
+      <h1 className="text-white text-5xl m-4 text-center" ref={photosRef}>
         Some of my Best Edits
       </h1>
 
       {/* card components */}
-      <div className="my-30">
+      <div className="my-30" >
         <Card></Card>
         <CardV2></CardV2>
         <Card></Card>
@@ -32,11 +32,11 @@ const Body = () => {
         <MoreSection></MoreSection>
       </div>
 
-      <div className="w-[83%] mx-auto">
-        <Reviews></Reviews>
+      <div className="w-[83%] mx-auto" >
+        <Reviews reviewsRef={reviewsRef}></Reviews>
       </div>
 
-      <div className="my-32">
+      <div className="my-32" ref={qnaRef}>
         <h1 className="text-5xl font-semibold text-white text-center">
           Questions & Answers
         </h1>

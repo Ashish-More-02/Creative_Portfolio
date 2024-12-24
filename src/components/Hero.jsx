@@ -1,11 +1,11 @@
-import React, { useEffect, useRef } from "react";
+import React, { forwardRef, useEffect, useRef } from "react";
 import "../Hero.css";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
 import { motion } from "motion/react";
 import v1 from "../assets/videos/galaxy.mp4";
 
-const Hero = () => {
+const Hero = ({heroRef}) => {
   useEffect(() => {
     AOS.init({ duration: 1000 }); // Configure AOS options
 
@@ -23,9 +23,9 @@ const Hero = () => {
   };
 
   return (
-    <div className="h-[80vh] flex flex-col justify-center items-center font-montserrat relative overflow-hidden">
+    <div className="h-[80vh] flex flex-col justify-center items-center font-montserrat relative overflow-hidden" ref={heroRef}>
       {/* Background Video */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0" >
         <video
           ref={videoRef}
           src={v1}
@@ -38,7 +38,7 @@ const Hero = () => {
       </div>
 
       {/* Overlay Content */}
-      <div className="z-10 text-white text-center">
+      <div className="z-10 text-white text-center" >
         <motion.h1
           className="text-6xl p-2 font-semibold bg-gradient-to-r from-black via-blue-50 to-white bg-clip-text text-transparent"
           initial={{

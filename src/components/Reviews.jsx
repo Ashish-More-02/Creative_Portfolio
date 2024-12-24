@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 import b1 from "../assets/Images/arrow_left.png";
 import b2 from "../assets/Images/arrow_right.png";
 
-const Reviews = () => {
+const Reviews = ({reviewsRef}) => {
   const filledArray = new Array(10).fill(0);
   const scrollContainerRef = useRef(null);
 
@@ -27,7 +27,7 @@ const Reviews = () => {
   return (
     <div className="relative">
       <div className="flex text-white flex-col text-center my-32">
-        <h1 className="text-5xl font-semibold"> Reviews that Speaks Volums</h1>
+        <h1 className="text-5xl font-semibold" ref={reviewsRef}> Reviews that Speaks Volums</h1>
         <p className="text-lg">Customer Reviews</p>
       </div>
 

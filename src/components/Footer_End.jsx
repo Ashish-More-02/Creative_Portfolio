@@ -1,16 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 
-const Footer_End = () => {
+const Footer_End = ({ contactRef }) => {
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div>
       {/* <h1 className="text-5xl font-semibold text-white text-center my-32">
         Contact me
       </h1> */}
-      <div className="text-center font-mono text-white my-32">
+      <div className="text-center font-mono text-white my-32" ref={contactRef} data-aos="fade-in">
         <h1 className="text-4xl font-semibold">Test UserName</h1>
         <p className="text-xl ">testuser@gmail.com</p>
       </div>
-      <div className=" bg-gradient-to-b from-[#10131b] to-slate-800 text-center text-white font-mono">
+      <div className=" bg-gradient-to-b from-[#10131b] to-slate-800 text-center text-white font-mono" data-aos="fade-in">
         {/* links */}
         <div className="mt-20">
           <footer class="bg-transparent">
