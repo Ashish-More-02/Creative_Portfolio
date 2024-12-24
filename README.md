@@ -53,12 +53,20 @@ Here are some previews of the website:
 
    ```
 
-2. move into directory and run
+2. move into directory ,install node modules and run
 
-   ```
+   ```bash
    cd creative_portfolio
+   ```
+
+   ```bash
+   npm i
+   ```
+
+   ```bash
    npm run dev
    ```
+
 3. Open (http://localhost:5173/) to Start
 
 ## Licence
